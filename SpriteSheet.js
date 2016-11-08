@@ -72,7 +72,7 @@
       exports = module.exports = SpriteSheet;
     }
     exports.SpriteSheet = SpriteSheet;
-  }
+  } else {
     this.SpriteSheet = SpriteSheet;
   }
 
