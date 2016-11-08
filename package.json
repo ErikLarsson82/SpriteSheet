@@ -1,0 +1,29 @@
+{
+  "name": "spritesheet-canvas",
+  "version": "1.0.0",
+  "description": "Small lib to easily create, tick and draw a spritesheet from one source image, rendering it to Canvas.",
+  "main": "SpriteSheet.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikLarsson82/SpriteSheet.git"
+  },
+  "keywords": [
+    "canvas",
+    "html5",
+    "spritesheet",
+    "animation",
+    "games"
+  ],
+  "author": "Erik Larsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErikLarsson82/SpriteSheet/issues"
+  },
+  "homepage": "https://github.com/ErikLarsson82/SpriteSheet#readme"
+}
