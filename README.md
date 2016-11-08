@@ -20,7 +20,7 @@ npm install spritesheet-canvas --saveDev
   var walk_texture = new Image();
   walk_texture.src = "./assets/images/walk_texture.png";
 
-  var walk_spritesheet = SpriteSheet.new(walk_animation_sprite, {
+  var walk_spritesheet = SpriteSheet.new(walk_texture, {
     frames: [200, 200, 200], //Each frame defined by the amount of time it will be rendered before moving on
     x: 0, //Start coordinates of the sequence
     y: 0,
