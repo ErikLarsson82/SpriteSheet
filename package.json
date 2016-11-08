@@ -1,6 +1,6 @@
 {
   "name": "spritesheet-canvas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small lib to easily create, tick and draw a spritesheet from one source image, rendering it to Canvas.",
   "main": "SpriteSheet.js",
   "directories": {
