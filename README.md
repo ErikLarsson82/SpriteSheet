@@ -13,6 +13,8 @@ npm install spritesheet-canvas --saveDev
  
   ![alt tag](https://raw.githubusercontent.com/ErikLarsson82/SpriteSheet/master/docs/help.png)
   
+  ### Try it
+  * [Try it or see it in action in this JSFiddle](https://jsfiddle.net/9mrp0qyy/)
   ### Example code
   ```javascript
   var SpriteSheet = require('SpriteSheet')
