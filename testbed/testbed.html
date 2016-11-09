@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<script src="../SpriteSheet.js"></script>
+<canvas id="canvas" width="600" height="400"></canvas>
+<script>
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+var x = 0; //Position for Murrio
+
+var walk_texture = new Image();
+walk_texture.src = "./walk_texture.png";
+
+var walk_spritesheet = SpriteSheet.new(walk_texture, {
+    frames: [100, 100, 100], //Each frame defined by the amount of time it will be rendered before moving on
+    x: 0, //Start coordinates of the sequence
+    y: 0,
+    width: 48, //Size of each frame. Only supports one frame size for all
+    height: 48,
+    restart: true, //Loops the sequence
+    autoPlay: true, //Starts the 
+});
+
+var gameLoop = function(delta) {
+    x = x + 0.2 * delta; //Modify the position
+    if (x > 600) x = 0;
+    //Do this every game loop, advances the sequence by a 60th of a second by default. Will not advance if paused, so call this always and let the internal state dictate if the tick takes effect
+    walk_spritesheet.tick();
+
+    context.fillStyle = "white"; //Clear the background
+    context.fillRect(0,0,600,400);
+    //Use your own methods for placing and rotating the canvas before drawing, here we use the external variable "x"
+    context.save()
+    context.translate(x, 30);
+
+    //Draw the current sprite in the texture
+    walk_spritesheet.draw(context);
+
+    context.restore();
+}
+
+setInterval(function() { gameLoop(1000/60) }, 1000/60)
+</script>
